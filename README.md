@@ -1,5 +1,25 @@
 # TechSymphony
-TechSymphony: Harmonizing Java, Scala, JavaScript, and more.
+TechSymphony:
+Harmonizing Java, Scala, JavaScript, and more.
+TechSymphony/
+├── src/
+│                                                                                                     ├── main/
+│                                                      │                                                                                      ├── java/
+│   │                                                                   ├── scala/
+│   │                                 ├── js/
+│   │                                                                                      └── ts/
+│   └── test/
+├──                 public/
+│                                 ├── css/
+│                                          ├── js/
+│                                                  └── html/
+├── docs/
+│   ├── README.md
+│   ├── CONTRIBUTING.md
+│   └── CODE_OF_CONDUCT.md
+├── .gitignore
+└── build.sbt (or pom.xml/ build.gradle for Java)
+
 Fantastic! Scala will bring powerful functional programming paradigms into the mix, complementing your existing tech stack.
 
 Initial Project Setup:
@@ -22,22 +42,7 @@ Community Guidelines: Set up CONTRIBUTING.md and CODE_OF_CONDUCT.md for smooth c
 Here’s an example of how your project structure might look:
 
 
-project-root/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   ├── scala/
-│   │   ├── js/
-│   │   └── ts/
-│   └── test/
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── html/
-├── docs/
-│   ├── README.md
-│   ├── CONTRIBUTING.md
-│   └── CODE_OF_CONDUCT.md
+
 Next Steps:
 Create the GitHub Repository: Initialize with this structure.
 
