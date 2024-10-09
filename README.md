@@ -1,17 +1,18 @@
 # TechSymphony
-TechSymphony: Harmonizing Java, Scala, JavaScript, and more.
+TechSymphony:
+Harmonizing Java, Scala, JavaScript, and more.
 TechSymphony/
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   ├── scala/
-│   │   ├── js/
-│   │   └── ts/
+│                                                                                                     ├── main/
+│                                                      │                                                                                      ├── java/
+│   │                                                                   ├── scala/
+│   │                                 ├── js/
+│   │                                                                                      └── ts/
 │   └── test/
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── html/
+├──                 public/
+│                                 ├── css/
+│                                          ├── js/
+│                                                  └── html/
 ├── docs/
 │   ├── README.md
 │   ├── CONTRIBUTING.md
