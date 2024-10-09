@@ -22,7 +22,6 @@ Community Guidelines: Set up CONTRIBUTING.md and CODE_OF_CONDUCT.md for smooth c
 Here’s an example of how your project structure might look:
 
 
-Copier
 project-root/
 ├── src/
 │   ├── main/
