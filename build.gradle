@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'scala'
+    id 'org.siouan.frontend-jdk11' version '6.0.0'
 }
 
 group = 'com.techsymphony'
@@ -10,10 +12,18 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.6'
+    implementation 'org.webjars.npm:react:17.0.2'
+    implementation 'org.webjars.npm:react-dom:17.0.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
 test {
     useJUnitPlatform()
+}
+
+frontend {
+    nodeVersion = '14.17.0'
+    yarnEnabled = true
 }

@@ -30,11 +30,17 @@ jobs:
       # Step 1: Build your artifacts.
       #
       # ========================================================
-      - name: Build artifacts
+      - name: Build Java artifacts
         run: |
-            # These are some amazing artifacts.
-            echo "artifact1" > artifact1
-            echo "artifact2" > artifact2
+            ./gradlew build
+
+      - name: Build Scala artifacts
+        run: |
+            sbt compile
+
+      - name: Build JavaScript artifacts
+        run: |
+            npm run build
 
       # ========================================================
       #
@@ -50,7 +56,7 @@ jobs:
           set -euo pipefail
 
           # List the artifacts the provenance will refer to.
-          files=$(ls artifact*)
+          files=$(ls build/libs/* build/target/scala-2.13/* dist/*)
           # Generate the subjects (base64 encoded).
           echo "hashes=$(sha256sum $files | base64 -w0)" >> "${GITHUB_OUTPUT}"
 
